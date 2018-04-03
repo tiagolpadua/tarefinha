@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import * as React from 'react';
+// import { Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
 import { Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar inverse fixedTop>
+        <Navbar inverse={true} fixedTop={true}>
           <Grid>
             <Navbar.Header>
               <Navbar.Brand>
@@ -23,7 +24,8 @@ class App extends Component {
                 bsStyle="success"
                 bsSize="large"
                 href="http://react-bootstrap.github.io/components.html"
-                target="_blank">
+                target="_blank"
+              >
                 View React Bootstrap Docs
               </Button>
             </p>
